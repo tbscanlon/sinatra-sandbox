@@ -14,6 +14,13 @@ get "/notsosecret" do
   "hi"
 end
 
-get "/cat" do
+get "/random-cat" do
+  @name = ["Amigo", "Oscar", "Viking", "help"].sample
+  erb(:index)
+end
+
+get "/named-cat" do
+  p params[:title]
+  @name = params[:title]
   erb(:index)
 end
