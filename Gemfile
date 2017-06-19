@@ -3,6 +3,6 @@ source "https://rubygems.org"
 
 gem "capybara"
 gem "pry"
-gem "selenium-webdriver", "2.53.4"
+gem "selenium-webdriver"
 gem "sinatra"
 gem "shotgun"
